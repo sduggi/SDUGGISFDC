@@ -1,0 +1,62 @@
+polymorphism:
+------------------
+     Method Binding:
+     --------------------
+      -replaceing method call with its appropriate reference is called binding
+    There are two types of binding
+    a)static binding:
+      ------------------
+       -if binding process has been done at the time of compilation then it is called as static binding
+     b)Dynamic binding:
+       ----------------------
+       -if binding process has been done at the time of runing application then it is called dynamic binding
+   -having diiferent forms to the same method is called as polymorphism.due to polymorphism we can perform different functionality with same call
+     there two types of polymorphism
+      1)static polymorphism:
+          ------------------------
+                -if polymorphism is implemented by using static binding then it is called as static polymorphism.in apex we can implement static polymorphism by using method overloading
+     2)Dynamic polymorphism:
+         -----------------------------
+                -if polymorphism is implemented by using dynamic binding then it is called as dynamic polymorphism.in apex language it can be implemented by using method overriding
+MethodOverloading:
+-------------------------
+    -defining number of methods with same name and with different signature is called as method overloading.
+       -signature of method is nothing but number of parameters and their datatypes but not return type
+         -mehod overloading can be with any type of method
+        -it is possible with in same class or subclass also
+        public class MyMathClass
+         {
+          public static Integer add(integer a,integer b)
+                {
+                    return a+b;
+                }
+          public static Integer add(Integer a,Integer b,Integer c)
+                {
+                   return a+b+c;
+                }
+          public static Decimal add(decimal a,integer b)
+                {
+                    return a+b;
+                }
+          public static void add(Integer a,Integer b)
+               {
+               }
+         }
+Method Overriding:
+------------------------
+     -defining number of methods with same name and with same signature is called as method overriding
+     -only virtual and abstract methods can be overrided
+     -it is possible with in subclasses
+    -we need to use override keyword to override method
+   virtual method:
+   ------------------
+         -method can be declared as virtual by using virtual keyword
+         -virtual method must have body
+        -it can be defined either virtual or abstract class
+        -it can be overrided in its subclasses
+
+
+
+
+
+
